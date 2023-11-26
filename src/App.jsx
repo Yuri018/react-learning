@@ -1,32 +1,39 @@
-import './App.css';
-import Button from './components/Button/Button';
+import "./App.css";
+import Button from "./components/Button/Button";
+import ProfileCard from "./components/ProfileCard/ProfilCard";
 
 function App() {
-  // JSX позволят нам создавать переменные и передавать туда теги
-  const name = <p>My name is Juri</p>;
-  const job = "Frontend developer";
-  const tegJobId = "Job";
-
-  const characters = {
-    hair: "black",
-    height: "185",
-  };
-
-  // const sum = (a, b) => a + b;
-
-  // const numberOfFriends = (count) => {
-  //   if (count > 5) {
-  //     return `У вас ${count} друзей`;
-  //   }
-  // };
-
-  // const rich = true;
-
   return (
     <div className="App">
-      {name}
-      {/* JSX позволяет нам передавать переменные с помощью фигурных скобок в HTML дерево */}
-
+      <div className="card-container">
+        <ProfileCard
+          avatar="https://super-avatara.ru/images/trueimg/pictures/69/08010C5B042B-69.gif"
+          firstName="John"
+          lastName="Smith"
+          occupation="React-developer"
+          hairColor="Blue"
+          height="160 sm"
+          hobby="Computer games"
+        />
+        <ProfileCard
+          avatar="https://super-avatara.ru/images/trueimg/pictures/69/62164C9D620F-69.gif"
+          firstName="Иван"
+          lastName="Иванов"
+          occupation="Фронтендер"
+          hairColor="Серый"
+          height="175 см"
+          hobby="Рыбалка"
+        />
+        <ProfileCard
+          avatar="https://super-avatara.ru/images/trueimg/pictures/69/94B37D6DE14F-69.gif"
+          firstName="Tina"
+          lastName="Turner"
+          occupation="Singer"
+          hairColor="Gold"
+          height="170 sm"
+          hobby="Music"
+        />
+      </div>
 
       <div className="button-container">
         <Button name="Отправить" type="submit" />
