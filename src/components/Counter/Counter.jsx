@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./styles.css";
-import Button from "../Button";
+import Button from "../Button/Button";
 
 function Counter() {
   const [count, setCount] = useState(0);
