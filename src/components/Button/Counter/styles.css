@@ -1,0 +1,27 @@
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 300px;
+  background-color: aquamarine;
+}
+.button-component {
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  border-color: aliceblue;
+  background-color: rgb(234, 79, 79);
+  font-size: 25px;
+}
+
+.value {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* justify-content: center; */
+  width: 80px;
+  height: 40px;
+  font-size: 40px;
+  color: red;
+}

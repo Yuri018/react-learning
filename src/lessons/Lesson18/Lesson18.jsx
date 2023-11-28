@@ -16,8 +16,8 @@ function Lesson18() {
     // setName меняет значение в useState
     setName("Ekaterina");
   };
-
-  const [count, setCount] = useState(0);
+  
+const [count, setCount] = useState(0);
   const counterHendler = () => {
     // 1 вариант: использовать синтаксис передавая в state новое значение
     // setCount(count + 1);
