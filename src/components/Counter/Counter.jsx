@@ -2,26 +2,26 @@ import { useState } from "react";
 import "./styles.css";
 import Button from "../Button/Button";
 
-function Counter() {
-  const [count, setCount] = useState(0);
-  const add = () => {
-    setCount((prevValue) => prevValue + 1);
-  };
+function Counter({ count, onPlus, onMinus }) {
+  // const [count, setCount] = useState(0);
+  // const onPlus = () => {
+  //   setCount((prevValue) => prevValue + 1);
+  // };
 
-  const subtract = () => {
-    setCount((prevValue) => prevValue - 1);
-  };
+  // const onMinus = () => {
+  //   setCount((prevValue) => prevValue - 1);
+  // };
 
   return (
     <div className="counter">
       <div className="buttonControl">
-        <Button onClick={subtract} name="-" />
+        <Button onClick={onMinus} name="-" />
       </div>
 
       <div className="value">{count}</div>
 
       <div className="buttonControl">
-        <Button onClick={add} name="+" />
+        <Button onClick={onPlus} name="+" />
       </div>
     </div>
   );
